@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS exercise</title>
+    </head>
+
+    <body>
+        <script>
+            
+            function add7(num){
+                num += 7;
+                return num;
+            }
+
+            function multiply(num1, num2){
+                return (num1 * num2);
+            }
+
+            function capitalize(str){
+                if (typeof str === "string"){
+                    const firstLetter = str.charAt(0).toUpperCase();
+                    const otherLetters = str.toLowerCase().slice(1);
+    
+                    return (firstLetter + otherLetters);
+                }else{
+                    return "type a string";
+                }
+            }
+
+            function lastLetter(str){
+                return str.slice(str.length - 1);
+            }
+
+        </script>
+    </body>
+
+</html>
